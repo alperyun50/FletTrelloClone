@@ -1,12 +1,13 @@
 import flet as ft
-import trello_app as trl
+import trello_app as t_a
+import app_layout as a_l
 
 
 def main(page: ft.Page):
     page.title = "Flet Trello Clone"
     page.padding = 0
     page.bgcolor = ft.colors.BLUE_GREY_200
-    app = trl.TrelloApp(page)
+    app = t_a.TrelloApp(page)
     page.add(app)
     page.update()
 

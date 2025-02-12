@@ -12,8 +12,9 @@ from flet import (
     margin
 )
 
-class TrelloApp:
+class TrelloApp(ft.Container):
     def __init__(self, page: ft.Page):
+        super().__init__()
         self.page = page
         self.appbar_items = [
             ft.PopupMenuItem(text="Login"),
